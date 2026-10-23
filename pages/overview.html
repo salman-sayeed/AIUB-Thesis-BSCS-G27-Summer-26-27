@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#f8fafc" />
+
+    <meta
+      name="description"
+      content="An accessible overview of Thesis Group G27's research on deep learning, skin lesion classification, generalization, and skin-tone-related evaluation."
+    />
+
+    <title>Study Overview | Thesis BSCS G27</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- =====================================
+       HEADER
+       ===================================== -->
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a
+          href="../index.html"
+          class="logo-link"
+          aria-label="Return to Thesis Group G27 homepage"
+        >
+          <img
+            src="../assets/images/aiub-line-logo.svg"
+            alt="American International University-Bangladesh seal"
+            class="aiub-logo"
+            width="94"
+            height="94"
+          />
+        </a>
+      </div>
+
+      <p class="university-name">
+        American International University-Bangladesh
+      </p>
+
+      <div class="header-divider" aria-hidden="true"></div>
+    </header>
+
+    <!-- =====================================
+       MAIN CONTENT
+       ===================================== -->
+
+    <main id="main-content" class="site-main tables-page overview-page">
+      <!-- BACK NAVIGATION -->
+
+      <a href="../index.html" class="page-back"> ← Back to Home </a>
+
+      <!-- =====================================
+         PAGE INTRODUCTION
+         ===================================== -->
+
+      <section class="tables-intro overview-intro">
+        <p class="page-eyebrow">G27 Research Archive</p>
+
+        <h1 class="tables-title">Study Overview</h1>
+
+        <p class="tables-description">
+          Understanding how a deep learning model classifies skin lesions and
+          why its performance should be examined across different
+          skin-tone-related groups.
+        </p>
+
+        <p class="tables-total">Research Snapshot</p>
+      </section>
+
+      <!-- =====================================
+         SECTION 1 — RESEARCH QUESTION
+         ===================================== -->
+
+      <section
+        class="overview-section"
+        aria-labelledby="overview-question-heading"
+      >
+        <div class="tables-section-heading">
+          <h2 id="overview-question-heading">What is this research about?</h2>
+
+          <p>Understanding the problem behind the study.</p>
+        </div>
+
+        <div class="overview-question-card">
+          <p class="overview-question-label">THE CENTRAL QUESTION</p>
+
+          <p class="overview-question-text">
+            If an AI model performs well overall, does that mean it performs
+            consistently across different skin-tone-related groups?
+          </p>
+
+          <p class="overview-question-explanation">
+            Not necessarily. An overall performance score can hide differences
+            between groups. Our study investigates those differences while
+            examining the model's predictions, uncertainty, and reliability.
+          </p>
+        </div>
+      </section>
+
+      <!-- =====================================
+         SECTION 2 — VISUAL WORKFLOW
+         ===================================== -->
+
+      <section
+        class="overview-section"
+        aria-labelledby="overview-workflow-heading"
+      >
+        <div class="tables-section-heading">
+          <h2 id="overview-workflow-heading">How does the study work?</h2>
+
+          <p>A simplified illustration of our experimental approach.</p>
+        </div>
+
+        <figure class="overview-workflow">
+          <div class="overview-process">
+            <!-- STEP 1 -->
+
+            <div class="overview-step">
+              <div
+                class="overview-step-visual overview-visual-lesion"
+                aria-hidden="true"
+              >
+                <div class="overview-lesion-art">
+                  <span class="lesion-sample lesion-sample-one">
+                    <span class="lesion-mark"></span>
+                  </span>
+
+                  <span class="lesion-sample lesion-sample-two">
+                    <span class="lesion-mark"></span>
+                  </span>
+                </div>
+              </div>
+
+              <p class="overview-step-number">STEP 01</p>
+
+              <h3>Skin Lesion Images</h3>
+
+              <p>
+                Images labeled as benign or malignant are used in the
+                experiments.
+              </p>
+            </div>
+
+            <!-- CONNECTOR -->
+
+            <span class="overview-process-arrow" aria-hidden="true"> → </span>
+
+            <!-- STEP 2 -->
+
+            <div class="overview-step">
+              <div
+                class="overview-step-visual overview-visual-model"
+                aria-hidden="true"
+              >
+                <div class="overview-network-art">
+                  <span class="network-node"></span>
+                  <span class="network-node"></span>
+                  <span class="network-node"></span>
+
+                  <span class="network-center"></span>
+
+                  <span class="network-node"></span>
+                  <span class="network-node"></span>
+                  <span class="network-node"></span>
+                </div>
+              </div>
+
+              <p class="overview-step-number">STEP 02</p>
+
+              <h3>Deep Learning Model</h3>
+
+              <p>
+                A ResNet50 classifier learns to distinguish between the two
+                labels.
+              </p>
+            </div>
+
+            <!-- CONNECTOR -->
+
+            <span class="overview-process-arrow" aria-hidden="true"> → </span>
+
+            <!-- STEP 3 -->
+
+            <div class="overview-step">
+              <div
+                class="overview-step-visual overview-visual-evaluation"
+                aria-hidden="true"
+              >
+                <div class="overview-evaluation-art">
+                  <span class="evaluation-bar evaluation-bar-one"></span>
+                  <span class="evaluation-bar evaluation-bar-two"></span>
+                  <span class="evaluation-bar evaluation-bar-three"></span>
+                  <span class="evaluation-bar evaluation-bar-four"></span>
+                </div>
+              </div>
+
+              <p class="overview-step-number">STEP 03</p>
+
+              <h3>Group-Level Evaluation</h3>
+
+              <p>
+                Performance and prediction behavior are compared across the
+                defined groups.
+              </p>
+            </div>
+          </div>
+
+          <figcaption class="overview-workflow-caption">
+            Conceptual illustration of the research workflow. This is not a
+            clinical diagnostic system.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- =====================================
+         SECTION 3 — SKIN-TONE DOMAINS
+         ===================================== -->
+
+      <section
+        class="overview-section"
+        aria-labelledby="overview-domains-heading"
+      >
+        <div class="tables-section-heading">
+          <h2 id="overview-domains-heading">How were the groups defined?</h2>
+
+          <p>
+            The study uses Fitzpatrick categories to organize skin-tone-related
+            evaluations.
+          </p>
+        </div>
+
+        <div class="overview-domain-grid">
+          <article class="overview-domain-card">
+            <p class="overview-domain-label">FAIR DOMAIN</p>
+
+            <h3>Fitzpatrick I–III</h3>
+
+            <p>
+              One evaluation group containing images assigned to Fitzpatrick
+              categories I, II, and III.
+            </p>
+          </article>
+
+          <article class="overview-domain-card">
+            <p class="overview-domain-label">DARK DOMAIN</p>
+
+            <h3>Fitzpatrick IV–VI</h3>
+
+            <p>
+              Another evaluation group containing images assigned to Fitzpatrick
+              categories IV, V, and VI.
+            </p>
+          </article>
+        </div>
+
+        <p class="overview-domain-note">
+          Important: Fitzpatrick categories are imperfect proxies for visible
+          skin pigmentation. The study also examined the six individual
+          categories rather than relying only on these two broad groups.
+        </p>
+      </section>
+
+      <!-- =====================================
+         SECTION 4 — EVALUATION
+         ===================================== -->
+
+      <section
+        class="overview-section"
+        aria-labelledby="overview-evaluation-heading"
+      >
+        <div class="tables-section-heading">
+          <h2 id="overview-evaluation-heading">What did we evaluate?</h2>
+
+          <p>We looked beyond a single accuracy score.</p>
+        </div>
+
+        <div class="overview-metrics-grid">
+          <article class="overview-metric-card">
+            <span class="overview-metric-icon" aria-hidden="true"> ↗ </span>
+
+            <h3>Classification Performance</h3>
+
+            <p>
+              How well the model distinguished benign from malignant lesions.
+            </p>
+          </article>
+
+          <article class="overview-metric-card">
+            <span class="overview-metric-icon" aria-hidden="true"> ⇄ </span>
+
+            <h3>Cross-Domain Transfer</h3>
+
+            <p>
+              How predictions changed when training and testing involved
+              different groups.
+            </p>
+          </article>
+
+          <article class="overview-metric-card">
+            <span class="overview-metric-icon" aria-hidden="true"> ◉ </span>
+
+            <h3>Prediction Reliability</h3>
+
+            <p>
+              How uncertain predictions were and how well predicted
+              probabilities matched outcomes.
+            </p>
+          </article>
+
+          <article class="overview-metric-card">
+            <span class="overview-metric-icon" aria-hidden="true"> ◎ </span>
+
+            <h3>Explainability</h3>
+
+            <p>
+              What exploratory Grad-CAM++ visualizations highlighted and how
+              stable they appeared.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- =====================================
+         SECTION 5 — KEY FINDINGS
+         ===================================== -->
+
+      <section
+        class="overview-section"
+        aria-labelledby="overview-findings-heading"
+      >
+        <div class="tables-section-heading">
+          <h2 id="overview-findings-heading">What did we find?</h2>
+
+          <p>
+            The main conclusions, explained without unnecessary technical
+            language.
+          </p>
+        </div>
+
+        <div class="overview-findings">
+          <!-- FINDING 1 -->
+
+          <article class="overview-finding">
+            <span class="overview-finding-number"> 01 </span>
+
+            <div>
+              <h3>Performance changed across domains</h3>
+
+              <p>
+                In the cross-domain experiments, classification performance
+                showed descriptive decreases when models were tested on a
+                different group from the one used for training. These
+                observations do not establish the same pattern in other
+                datasets.
+              </p>
+            </div>
+          </article>
+
+          <!-- FINDING 2 -->
+
+          <article class="overview-finding">
+            <span class="overview-finding-number"> 02 </span>
+
+            <div>
+              <h3>Changing the training mix was not a proven solution</h3>
+
+              <p>
+                Different proportions of the two groups were tested during
+                training. However, none of the five predefined confirmatory
+                outcomes showed statistically supported effects after correction
+                for multiple comparisons.
+              </p>
+            </div>
+          </article>
+
+          <!-- FINDING 3 -->
+
+          <article class="overview-finding">
+            <span class="overview-finding-number"> 03 </span>
+
+            <div>
+              <h3>Uncertainty revealed additional patterns</h3>
+
+              <p>
+                Some overall differences in uncertainty and probability error
+                for malignant lesions were statistically supported. Individual
+                pairwise comparisons were not supported after correction.
+              </p>
+            </div>
+          </article>
+
+          <!-- FINDING 4 -->
+
+          <article class="overview-finding">
+            <span class="overview-finding-number"> 04 </span>
+
+            <div>
+              <h3>Feature alignment did not show a reliable improvement</h3>
+
+              <p>
+                The validation procedure selected an MMD regularization weight
+                of zero. The additional nonzero-weight comparison did not show
+                statistically supported improvements in the evaluated outcomes.
+              </p>
+            </div>
+          </article>
+
+          <!-- FINDING 5 -->
+
+          <article class="overview-finding">
+            <span class="overview-finding-number"> 05 </span>
+
+            <div>
+              <h3>Visual explanations have limits</h3>
+
+              <p>
+                Grad-CAM++ highlighted image regions, but these exploratory
+                visualizations did not establish that the highlighted regions
+                faithfully explained the model's predictions.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =====================================
+         SECTION 6 — LIMITATIONS
+         ===================================== -->
+
+      <section
+        class="overview-section"
+        aria-labelledby="overview-limitations-heading"
+      >
+        <div class="tables-section-heading">
+          <h2 id="overview-limitations-heading">What are the limitations?</h2>
+
+          <p>
+            Understanding what these findings cannot establish is equally
+            important.
+          </p>
+        </div>
+
+        <div class="overview-limitations">
+          <ul>
+            <li>Unequal representation across skin-tone-related categories.</li>
+
+            <li>
+              Fitzpatrick categories do not directly measure visible skin
+              pigmentation.
+            </li>
+
+            <li>
+              Patient-level and lesion-level separation was not fully verified.
+            </li>
+
+            <li>Model architecture and adaptation comparisons were limited.</li>
+
+            <li>
+              Independent prospective clinical validation was not performed.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- =====================================
+         SECTION 7 — MAIN TAKEAWAY
+         ===================================== -->
+
+      <section
+        class="overview-takeaway"
+        aria-labelledby="overview-takeaway-heading"
+      >
+        <p class="overview-takeaway-label">THE MAIN TAKEAWAY</p>
+
+        <h2 id="overview-takeaway-heading">
+          Accuracy alone does not tell the whole story.
+        </h2>
+
+        <p>
+          Evaluating skin-lesion AI responsibly requires examining performance
+          across groups, uncertainty, probabilistic error, and the limits of
+          model explanations. This research does not demonstrate universal
+          fairness or readiness for clinical use.
+        </p>
+      </section>
+
+      <!-- =====================================
+         EXPLORE THE EVIDENCE
+         ===================================== -->
+
+      <nav class="overview-explore" aria-label="Explore supporting research">
+        <a href="./figures.html" class="overview-explore-link">
+          Explore Figures
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <a href="./tables.html" class="overview-explore-link">
+          Explore Tables
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <a href="./references.html" class="overview-explore-link">
+          View References
+          <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </main>
+
+    <!-- =====================================
+       FOOTER
+       ===================================== -->
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-primary">Department of Computer Science</p>
+
+        <p class="footer-secondary">
+          <a
+            href="https://www.aiub.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            American International University-Bangladesh
+          </a>
+        </p>
+
+        <p class="footer-secondary">Thesis BSCS G27 · Summer 2025–2026</p>
+      </div>
+    </footer>
+  </body>
+</html>

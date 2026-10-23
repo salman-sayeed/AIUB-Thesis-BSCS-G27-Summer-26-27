@@ -2316,3 +2316,979 @@ button:focus-visible {
     transition: none;
   }
 }
+
+/* =========================================================
+   PHASE 6B — STUDY OVERVIEW
+   Thesis Group G27
+   Modern Light Academic Design
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. PAGE LAYOUT
+   --------------------------------------------------------- */
+
+.overview-page {
+  --overview-blue: #193b63;
+  --overview-blue-light: #edf4fa;
+  --overview-text: #34465c;
+  --overview-muted: #64748b;
+  --overview-border: #e2eaf2;
+
+  padding-bottom: 90px;
+}
+
+.overview-intro {
+  margin-bottom: 52px;
+}
+
+.overview-section {
+  margin-bottom: 64px;
+}
+
+.overview-section .tables-section-heading {
+  margin-bottom: 24px;
+}
+
+/* ---------------------------------------------------------
+   2. CENTRAL RESEARCH QUESTION
+   --------------------------------------------------------- */
+
+.overview-question-card {
+  padding: clamp(24px, 4vw, 38px);
+
+  background: linear-gradient(135deg, #ffffff 0%, #f0f6fc 100%);
+
+  border: 1px solid #d8e7f4;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 30px rgba(25, 59, 99, 0.035);
+}
+
+.overview-question-label {
+  margin: 0 0 16px;
+
+  color: #286da7;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.overview-question-text {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: var(--overview-blue);
+
+  font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+  font-weight: 650;
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+}
+
+.overview-question-explanation {
+  max-width: 720px;
+
+  margin: 20px 0 0;
+
+  color: var(--overview-text);
+
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   3. WORKFLOW CONTAINER
+   --------------------------------------------------------- */
+
+.overview-workflow {
+  margin: 0;
+  padding: 32px 24px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid var(--overview-border);
+  border-radius: 20px;
+
+  box-shadow: 0 6px 26px rgba(25, 59, 99, 0.035);
+}
+
+.overview-process {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    30px
+    minmax(0, 1fr)
+    30px
+    minmax(0, 1fr);
+
+  align-items: start;
+  gap: 8px;
+}
+
+/* ---------------------------------------------------------
+   4. WORKFLOW STEPS
+   --------------------------------------------------------- */
+
+.overview-step {
+  min-width: 0;
+  text-align: center;
+}
+
+.overview-step-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 136px;
+  height: 112px;
+
+  max-width: 100%;
+  margin: 0 auto 22px;
+
+  background: #f2f7fb;
+
+  border: 1px solid #e2edf6;
+  border-radius: 18px;
+}
+
+.overview-step-number {
+  margin: 0 0 8px;
+
+  color: #397bab;
+
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.overview-step h3 {
+  margin: 0 0 10px;
+
+  color: var(--overview-blue);
+
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.overview-step > p:last-child {
+  max-width: 225px;
+
+  margin: 0 auto;
+
+  color: var(--overview-muted);
+
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+/* ---------------------------------------------------------
+   5. WORKFLOW ARROWS
+   --------------------------------------------------------- */
+
+.overview-process-arrow {
+  align-self: start;
+
+  margin-top: 43px;
+
+  color: #9aafc3;
+
+  font-size: 1.65rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------
+   6. CARTOON SKIN LESION ILLUSTRATION
+
+   Conceptual illustration only.
+   Not an actual lesion image.
+   --------------------------------------------------------- */
+
+.overview-lesion-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+.lesion-sample {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 49px;
+  height: 59px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(44, 38, 34, 0.08),
+    0 5px 12px rgba(45, 44, 42, 0.06);
+}
+
+.lesion-sample-one {
+  background: #e6beaa;
+}
+
+.lesion-sample-two {
+  background: #a97967;
+}
+
+.lesion-mark {
+  display: block;
+
+  width: 23px;
+  height: 25px;
+
+  background: #78513f;
+
+  border-radius: 51% 43% 55% 47%;
+
+  transform: rotate(-12deg);
+}
+
+.lesion-sample-two .lesion-mark {
+  width: 21px;
+  height: 24px;
+
+  background: #55352e;
+
+  transform: rotate(18deg);
+}
+
+/* ---------------------------------------------------------
+   7. NEURAL NETWORK ILLUSTRATION
+   --------------------------------------------------------- */
+
+.overview-network-art {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  width: 115px;
+  height: 70px;
+}
+
+.overview-network-art::before {
+  content: "";
+
+  position: absolute;
+
+  left: 10px;
+  right: 10px;
+  top: 50%;
+
+  height: 2px;
+
+  background: linear-gradient(90deg, #b8d4e9, #4c92c9, #b8d4e9);
+
+  transform: translateY(-50%);
+}
+
+.network-node {
+  position: relative;
+  z-index: 1;
+
+  flex: 0 0 10px;
+
+  width: 10px;
+  height: 10px;
+
+  background: #8fbada;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 1px #9bc3df;
+}
+
+.network-center {
+  position: relative;
+  z-index: 2;
+
+  flex: 0 0 25px;
+
+  width: 25px;
+  height: 25px;
+
+  background: #286da7;
+
+  border: 5px solid #d7eaf8;
+  border-radius: 50%;
+
+  animation: overview-node-pulse 3s ease-in-out infinite;
+}
+
+@keyframes overview-node-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(40, 109, 167, 0.14);
+  }
+
+  50% {
+    box-shadow: 0 0 0 9px rgba(40, 109, 167, 0);
+  }
+}
+
+/* ---------------------------------------------------------
+   8. EVALUATION BAR ILLUSTRATION
+   --------------------------------------------------------- */
+
+.overview-evaluation-art {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 9px;
+
+  width: 110px;
+  height: 69px;
+
+  padding-bottom: 3px;
+}
+
+.evaluation-bar {
+  display: block;
+
+  width: 16px;
+
+  background: linear-gradient(180deg, #458fca, #245e91);
+
+  border-radius: 5px 5px 2px 2px;
+
+  transform-origin: bottom;
+
+  animation: overview-bars-rise 0.8s ease-out both;
+}
+
+.evaluation-bar-one {
+  height: 32px;
+  animation-delay: 0.1s;
+}
+
+.evaluation-bar-two {
+  height: 53px;
+  animation-delay: 0.2s;
+}
+
+.evaluation-bar-three {
+  height: 42px;
+  animation-delay: 0.3s;
+}
+
+.evaluation-bar-four {
+  height: 60px;
+  animation-delay: 0.4s;
+}
+
+@keyframes overview-bars-rise {
+  from {
+    transform: scaleY(0.35);
+    opacity: 0.45;
+  }
+
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+/* ---------------------------------------------------------
+   9. WORKFLOW CAPTION
+   --------------------------------------------------------- */
+
+.overview-workflow-caption {
+  margin-top: 30px;
+  padding-top: 17px;
+
+  color: #7c8997;
+
+  border-top: 1px solid #edf1f5;
+
+  font-size: 0.78rem;
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------
+   10. FITZPATRICK DOMAIN CARDS
+   --------------------------------------------------------- */
+
+.overview-domain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.overview-domain-card {
+  position: relative;
+
+  min-width: 0;
+  padding: 26px;
+
+  background: #ffffff;
+
+  border: 1px solid var(--overview-border);
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+.overview-domain-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 4px;
+
+  background: #78a8ce;
+}
+
+.overview-domain-card:nth-child(2)::before {
+  background: #526f8c;
+}
+
+.overview-domain-label {
+  margin: 0 0 13px;
+
+  color: #397bab;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.overview-domain-card:nth-child(2) .overview-domain-label {
+  color: #58738d;
+}
+
+.overview-domain-card h3 {
+  margin: 0 0 12px;
+
+  color: var(--overview-blue);
+
+  font-size: 1.25rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.overview-domain-card > p:last-child {
+  margin: 0;
+
+  color: var(--overview-muted);
+
+  font-size: 0.91rem;
+  line-height: 1.75;
+}
+
+/* ---------------------------------------------------------
+   11. DOMAIN LIMITATION NOTE
+   --------------------------------------------------------- */
+
+.overview-domain-note {
+  margin: 20px 0 0;
+  padding: 17px 20px;
+
+  color: #51657a;
+  background: #f4f8fc;
+
+  border-left: 3px solid #7ba9ca;
+  border-radius: 0 12px 12px 0;
+
+  font-size: 0.87rem;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   12. EVALUATION METRIC GRID
+   --------------------------------------------------------- */
+
+.overview-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.overview-metric-card {
+  min-width: 0;
+
+  padding: 26px;
+
+  background: #ffffff;
+
+  border: 1px solid var(--overview-border);
+  border-radius: 18px;
+
+  box-shadow: 0 3px 14px rgba(25, 59, 99, 0.025);
+}
+
+.overview-metric-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 43px;
+  height: 43px;
+
+  margin-bottom: 20px;
+
+  color: #276fa8;
+  background: #eaf3fa;
+
+  border-radius: 12px;
+
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.overview-metric-card h3 {
+  margin: 0 0 10px;
+
+  color: var(--overview-blue);
+
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.overview-metric-card p {
+  margin: 0;
+
+  color: var(--overview-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+/* ---------------------------------------------------------
+   13. KEY FINDINGS CONTAINER
+   --------------------------------------------------------- */
+
+.overview-findings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ---------------------------------------------------------
+   14. INDIVIDUAL RESEARCH FINDING
+   --------------------------------------------------------- */
+
+.overview-finding {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+
+  align-items: start;
+  gap: 20px;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid var(--overview-border);
+  border-radius: 17px;
+
+  box-shadow: 0 3px 15px rgba(25, 59, 99, 0.02);
+}
+
+.overview-finding-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 43px;
+  height: 43px;
+
+  color: #2a72aa;
+  background: #eaf3fa;
+
+  border-radius: 12px;
+
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.overview-finding h3 {
+  margin: 1px 0 10px;
+
+  color: var(--overview-blue);
+
+  font-size: 1.02rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.overview-finding p {
+  margin: 0;
+
+  color: var(--overview-muted);
+
+  font-size: 0.91rem;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   15. STUDY LIMITATIONS
+   --------------------------------------------------------- */
+
+.overview-limitations {
+  padding: 25px 30px;
+
+  background: #ffffff;
+
+  border: 1px solid var(--overview-border);
+  border-radius: 18px;
+}
+
+.overview-limitations ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.overview-limitations li {
+  padding-left: 5px;
+  margin-bottom: 13px;
+
+  color: var(--overview-text);
+
+  font-size: 0.93rem;
+  line-height: 1.75;
+}
+
+.overview-limitations li:last-child {
+  margin-bottom: 0;
+}
+
+.overview-limitations li::marker {
+  color: #4687bb;
+}
+
+/* ---------------------------------------------------------
+   16. MAIN TAKEAWAY
+   --------------------------------------------------------- */
+
+.overview-takeaway {
+  margin: 12px 0 30px;
+
+  padding: clamp(28px, 5vw, 46px);
+
+  color: #ffffff;
+
+  background: linear-gradient(135deg, #193b63 0%, #265a89 100%);
+
+  border-radius: 22px;
+}
+
+.overview-takeaway-label {
+  margin: 0 0 15px;
+
+  color: #bfdbf1;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.overview-takeaway h2 {
+  max-width: 700px;
+
+  margin: 0 0 19px;
+
+  color: #ffffff;
+
+  font-size: clamp(1.5rem, 3.3vw, 2.15rem);
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: -0.03em;
+}
+
+.overview-takeaway > p:last-child {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: #e0ebf5;
+
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+/* ---------------------------------------------------------
+   17. EXPLORE LINKS
+   --------------------------------------------------------- */
+
+.overview-explore {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+
+  margin-bottom: 20px;
+}
+
+.overview-explore-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  min-height: 48px;
+
+  padding: 12px 19px;
+
+  color: var(--overview-blue);
+  background: #ffffff;
+
+  border: 1px solid #dce7f0;
+  border-radius: 12px;
+
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.overview-explore-link:hover {
+  background: #f2f7fb;
+  border-color: #a6c4dd;
+
+  transform: translateY(-2px);
+}
+
+.overview-explore-link:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.overview-explore-link span {
+  color: #6b99bd;
+  font-size: 1.05rem;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   18. TABLETS
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .overview-page {
+    padding-bottom: 70px;
+  }
+
+  .overview-intro {
+    margin-bottom: 42px;
+  }
+
+  .overview-section {
+    margin-bottom: 50px;
+  }
+
+  .overview-workflow {
+    padding: 26px 16px 20px;
+  }
+
+  .overview-process {
+    gap: 5px;
+  }
+
+  .overview-step-visual {
+    width: 118px;
+    height: 103px;
+  }
+
+  .overview-domain-card,
+  .overview-metric-card {
+    padding: 22px;
+  }
+
+  .overview-finding {
+    padding: 21px;
+  }
+}
+
+/* ---------------------------------------------------------
+   19. SMALL TABLETS AND PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+  .overview-process {
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 15px;
+  }
+
+  .overview-step {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .overview-step-visual {
+    width: 136px;
+    height: 112px;
+
+    margin-bottom: 18px;
+  }
+
+  .overview-process-arrow {
+    margin: 0 auto;
+
+    transform: rotate(90deg);
+
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .overview-workflow-caption {
+    margin-top: 25px;
+  }
+}
+
+/* ---------------------------------------------------------
+   20. MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  .overview-page {
+    padding-bottom: 55px;
+  }
+
+  .overview-intro {
+    margin-bottom: 36px;
+  }
+
+  .overview-section {
+    margin-bottom: 43px;
+  }
+
+  .overview-section .tables-section-heading {
+    margin-bottom: 20px;
+  }
+
+  .overview-question-card {
+    padding: 24px 21px;
+  }
+
+  .overview-question-text {
+    font-size: 1.35rem;
+  }
+
+  .overview-question-explanation {
+    font-size: 0.91rem;
+  }
+
+  .overview-domain-grid,
+  .overview-metrics-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .overview-domain-card,
+  .overview-metric-card {
+    padding: 22px;
+  }
+
+  .overview-finding {
+    grid-template-columns: 39px minmax(0, 1fr);
+    gap: 14px;
+
+    padding: 19px;
+  }
+
+  .overview-finding-number {
+    width: 38px;
+    height: 38px;
+
+    font-size: 0.75rem;
+  }
+
+  .overview-finding h3 {
+    font-size: 0.96rem;
+  }
+
+  .overview-finding p {
+    font-size: 0.87rem;
+    line-height: 1.75;
+  }
+
+  .overview-limitations {
+    padding: 22px;
+  }
+
+  .overview-takeaway {
+    padding: 28px 23px;
+    border-radius: 17px;
+  }
+
+  .overview-takeaway > p:last-child {
+    font-size: 0.9rem;
+  }
+
+  .overview-explore {
+    flex-direction: column;
+  }
+
+  .overview-explore-link {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------
+   21. SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+  .overview-workflow {
+    padding: 22px 14px 18px;
+  }
+
+  .overview-question-text {
+    font-size: 1.2rem;
+  }
+
+  .overview-finding {
+    gap: 11px;
+    padding: 16px;
+  }
+
+  .overview-finding p {
+    font-size: 0.84rem;
+  }
+
+  .overview-domain-note {
+    padding: 15px;
+  }
+}
+
+/* ---------------------------------------------------------
+   22. REDUCED MOTION ACCESSIBILITY
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .network-center,
+  .evaluation-bar {
+    animation: none !important;
+  }
+
+  .overview-explore-link {
+    transition: none;
+  }
+
+  .overview-explore-link:hover {
+    transform: none;
+  }
+}
