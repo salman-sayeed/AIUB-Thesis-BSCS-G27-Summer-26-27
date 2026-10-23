@@ -260,9 +260,13 @@
         </div>
 
         <p class="overview-domain-note">
-          Important: Fitzpatrick categories are imperfect proxies for visible
-          skin pigmentation. The study also examined the six individual
-          categories rather than relying only on these two broad groups.
+          <strong>Important clarification:</strong>
+          In this study, "Fair" refers to Fitzpatrick categories I–III, while
+          "Dark" refers to categories IV–VI. The word "Fair" does not mean that
+          the AI model has been proven fair. Fitzpatrick categories are also
+          imperfect indicators of visible skin pigmentation. We therefore
+          examined all six individual categories alongside the two broader
+          groups.
         </p>
       </section>
 
@@ -338,8 +342,10 @@
           <h2 id="overview-findings-heading">What did we find?</h2>
 
           <p>
-            The main conclusions, explained without unnecessary technical
-            language.
+            The main findings are summarized below. A "statistically supported"
+            result passed the study's tests after adjusting for multiple
+            comparisons. A result that was not supported does not prove that two
+            groups perform equally.
           </p>
         </div>
 
@@ -404,9 +410,12 @@
               <h3>Feature alignment did not show a reliable improvement</h3>
 
               <p>
-                The validation procedure selected an MMD regularization weight
-                of zero. The additional nonzero-weight comparison did not show
-                statistically supported improvements in the evaluated outcomes.
+                We tested Maximum Mean Discrepancy (MMD), a training method
+                intended to make learned features more similar across groups for
+                the same classification label. The validation procedure selected
+                no additional MMD penalty. Testing a nonzero penalty did not
+                demonstrate statistically supported improvements in the
+                evaluated outcomes.
               </p>
             </div>
           </article>
@@ -420,9 +429,10 @@
               <h3>Visual explanations have limits</h3>
 
               <p>
-                Grad-CAM++ highlighted image regions, but these exploratory
-                visualizations did not establish that the highlighted regions
-                faithfully explained the model's predictions.
+                Grad-CAM++ generated heatmaps highlighting regions of
+                skin-lesion images. These visualizations were exploratory. The
+                study did not establish that the highlighted regions caused the
+                model's predictions or provided clinically correct explanations.
               </p>
             </div>
           </article>
