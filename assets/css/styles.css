@@ -3922,3 +3922,999 @@ button:focus-visible {
     transform: none;
   }
 }
+/* =========================================================
+   PHASE 8E-B — RESEARCH REPRODUCIBILITY
+   Thesis Group G27
+   Modern Light Academic Design
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. PAGE LAYOUT
+   --------------------------------------------------------- */
+
+.reproducibility-page {
+  padding-bottom: 90px;
+}
+
+.repro-intro {
+  margin-bottom: 52px;
+}
+
+.repro-section {
+  margin-bottom: 64px;
+}
+
+.repro-section .tables-section-heading {
+  margin-bottom: 26px;
+}
+
+/* ---------------------------------------------------------
+   2. EXPERIMENTAL ENVIRONMENT GRID
+   --------------------------------------------------------- */
+
+.repro-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+/* ---------------------------------------------------------
+   3. EXPERIMENTAL ENVIRONMENT CARDS
+   --------------------------------------------------------- */
+
+.repro-fact-card {
+  min-width: 0;
+
+  padding: 27px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.repro-fact-card:hover {
+  border-color: var(--border-hover);
+
+  box-shadow: var(--shadow-md);
+
+  transform: translateY(-3px);
+}
+
+/* Card number */
+
+.repro-fact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  margin-bottom: 20px;
+
+  background: var(--primary-soft);
+
+  border: 1px solid #dce8f3;
+  border-radius: 13px;
+
+  color: var(--primary);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+/* Card label */
+
+.repro-fact-label {
+  margin: 0 0 9px;
+
+  color: #5b86ab;
+
+  font-size: 0.69rem;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+}
+
+/* Card heading */
+
+.repro-fact-card h3 {
+  margin: 0 0 9px;
+
+  color: var(--primary);
+
+  font-size: 1.15rem;
+  font-weight: 650;
+  line-height: 1.4;
+
+  letter-spacing: -0.02em;
+}
+
+/* Card description */
+
+.repro-fact-card > p:last-child {
+  margin: 0;
+
+  color: var(--text-secondary);
+
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+/* ---------------------------------------------------------
+   4. REPRODUCTION WORKFLOW
+   --------------------------------------------------------- */
+
+.repro-steps {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* ---------------------------------------------------------
+   5. INDIVIDUAL WORKFLOW STEPS
+   --------------------------------------------------------- */
+
+.repro-step {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 47px minmax(0, 1fr);
+
+  align-items: start;
+
+  gap: 21px;
+
+  padding: 26px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.repro-step:hover {
+  border-color: var(--border-hover);
+
+  box-shadow: var(--shadow-md);
+}
+
+/* Workflow step number */
+
+.repro-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  background: var(--primary-soft);
+
+  border: 1px solid #dae8f3;
+  border-radius: 13px;
+
+  color: var(--primary);
+
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* Workflow content */
+
+.repro-step-content {
+  min-width: 0;
+}
+
+.repro-step-content h3 {
+  margin: 2px 0 12px;
+
+  color: var(--primary);
+
+  font-size: 1.07rem;
+  font-weight: 650;
+  line-height: 1.45;
+
+  letter-spacing: -0.015em;
+}
+
+.repro-step-content p {
+  margin: 0 0 13px;
+
+  color: var(--text-secondary);
+
+  font-size: 0.91rem;
+  line-height: 1.85;
+}
+
+.repro-step-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------
+   6. WORKFLOW NOTES
+   --------------------------------------------------------- */
+
+.repro-step-note {
+  margin-top: 17px;
+  padding: 14px 17px;
+
+  background: #f1f6fb;
+
+  border-left: 3px solid #83a9c9;
+  border-radius: 0 10px 10px 0;
+
+  color: #526c83;
+
+  font-size: 0.84rem;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   7. INLINE RESOURCE LINKS
+   --------------------------------------------------------- */
+
+.repro-inline-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 4px;
+
+  color: #286da7;
+
+  font-size: 0.88rem;
+  font-weight: 650;
+  line-height: 1.5;
+
+  transition: color var(--transition);
+}
+
+.repro-inline-link:hover {
+  color: var(--primary);
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.repro-step-links {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  margin-top: 10px;
+}
+
+/* ---------------------------------------------------------
+   8. RESOURCE TABLE CONTAINER
+   --------------------------------------------------------- */
+
+.repro-table-scroll {
+  width: 100%;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ---------------------------------------------------------
+   9. RESOURCE AVAILABILITY TABLE
+   --------------------------------------------------------- */
+
+.repro-resource-table {
+  width: 100%;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  text-align: left;
+}
+
+.repro-resource-table thead {
+  background: #f2f6fa;
+}
+
+.repro-resource-table thead th {
+  padding: 18px 20px;
+
+  color: var(--primary);
+
+  border-bottom: 1px solid var(--border);
+
+  font-size: 0.77rem;
+  font-weight: 700;
+
+  letter-spacing: 0.025em;
+}
+
+.repro-resource-table tbody th,
+.repro-resource-table tbody td {
+  padding: 20px;
+
+  border-bottom: 1px solid #edf1f5;
+
+  vertical-align: middle;
+
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.repro-resource-table tbody th {
+  width: 28%;
+
+  color: var(--text);
+
+  font-weight: 650;
+}
+
+.repro-resource-table tbody td {
+  color: var(--text-secondary);
+}
+
+.repro-resource-table tbody tr:last-child th,
+.repro-resource-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.repro-resource-table tbody tr:hover {
+  background: #fafcfe;
+}
+
+/* ---------------------------------------------------------
+   10. RESOURCE STATUS BADGES
+   --------------------------------------------------------- */
+
+.repro-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 11px;
+
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  font-size: 0.73rem;
+  font-weight: 650;
+  line-height: 1.35;
+
+  white-space: nowrap;
+}
+
+/* Public */
+
+.repro-status-public {
+  background: #eaf7ef;
+
+  border-color: #ccebd7;
+
+  color: #256342;
+}
+
+/* External source */
+
+.repro-status-external {
+  background: #eaf3fc;
+
+  border-color: #cfe2f5;
+
+  color: #285d92;
+}
+
+/* Restricted access */
+
+.repro-status-restricted {
+  background: #fff5e8;
+
+  border-color: #f1dfc4;
+
+  color: #96611f;
+}
+
+/* Not included */
+
+.repro-status-unavailable {
+  background: #f2f4f7;
+
+  border-color: #e0e5eb;
+
+  color: #657184;
+}
+
+/* ---------------------------------------------------------
+   11. LIMITATIONS CONTAINER
+   --------------------------------------------------------- */
+
+.repro-limitations-card {
+  padding: 28px 32px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+}
+
+.repro-limitations-card ul {
+  margin: 0;
+
+  padding-left: 21px;
+}
+
+.repro-limitations-card li {
+  margin-bottom: 16px;
+  padding-left: 5px;
+
+  color: var(--text-secondary);
+
+  font-size: 0.91rem;
+  line-height: 1.85;
+}
+
+.repro-limitations-card li:last-child {
+  margin-bottom: 0;
+}
+
+.repro-limitations-card li::marker {
+  color: #4382b5;
+}
+
+.repro-limitations-card strong {
+  color: var(--text);
+
+  font-weight: 650;
+}
+
+/* ---------------------------------------------------------
+   12. GITHUB REPOSITORY PANEL
+   --------------------------------------------------------- */
+
+.repro-repository-section {
+  margin-top: 20px;
+}
+
+.repro-repository-card {
+  padding: clamp(29px, 5vw, 45px);
+
+  background: linear-gradient(135deg, #193b63 0%, #265b8b 100%);
+
+  border-radius: 22px;
+
+  color: #ffffff;
+}
+
+.repro-repository-eyebrow {
+  margin: 0 0 15px;
+
+  color: #bfdcf2;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.repro-repository-card h2 {
+  margin: 0 0 16px;
+
+  color: #ffffff;
+
+  font-size: clamp(1.45rem, 3vw, 1.95rem);
+  font-weight: 650;
+  line-height: 1.35;
+
+  letter-spacing: -0.025em;
+}
+
+.repro-repository-card > p:not(.repro-repository-eyebrow) {
+  max-width: 670px;
+
+  margin: 0;
+
+  color: #e0ebf5;
+
+  font-size: 0.94rem;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   13. GITHUB PANEL BUTTONS
+   --------------------------------------------------------- */
+
+.repro-repository-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 27px;
+}
+
+.repro-repository-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 47px;
+
+  padding: 12px 19px;
+
+  border: 1px solid transparent;
+  border-radius: 11px;
+
+  font-size: 0.85rem;
+  font-weight: 650;
+  line-height: 1.4;
+
+  text-align: center;
+
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+/* Primary button */
+
+.repro-repository-button-primary {
+  background: #ffffff;
+
+  color: var(--primary);
+}
+
+.repro-repository-button-primary:hover {
+  background: #edf4fa;
+
+  transform: translateY(-2px);
+}
+
+/* Secondary button */
+
+.repro-repository-button-secondary {
+  background: rgba(255, 255, 255, 0.09);
+
+  border-color: rgba(255, 255, 255, 0.3);
+
+  color: #ffffff;
+}
+
+.repro-repository-button-secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+
+  border-color: rgba(255, 255, 255, 0.55);
+
+  transform: translateY(-2px);
+}
+
+/* Keyboard accessibility */
+
+.repro-repository-button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   14. TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .reproducibility-page {
+    padding-bottom: 70px;
+  }
+
+  .repro-intro {
+    margin-bottom: 43px;
+  }
+
+  .repro-section {
+    margin-bottom: 52px;
+  }
+
+  .repro-facts-grid {
+    gap: 14px;
+  }
+
+  .repro-fact-card {
+    padding: 23px;
+  }
+
+  .repro-step {
+    padding: 22px;
+  }
+
+  .repro-resource-table thead th,
+  .repro-resource-table tbody th,
+  .repro-resource-table tbody td {
+    padding: 16px;
+  }
+}
+
+/* ---------------------------------------------------------
+   15. MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  .reproducibility-page {
+    padding-bottom: 55px;
+  }
+
+  .repro-intro {
+    margin-bottom: 37px;
+  }
+
+  .repro-section {
+    margin-bottom: 43px;
+  }
+
+  .repro-section .tables-section-heading {
+    margin-bottom: 20px;
+  }
+
+  /* Environment cards */
+
+  .repro-facts-grid {
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 13px;
+  }
+
+  .repro-fact-card {
+    padding: 22px;
+  }
+
+  .repro-fact-icon {
+    width: 40px;
+    height: 40px;
+
+    margin-bottom: 16px;
+  }
+
+  /* Workflow */
+
+  .repro-steps {
+    gap: 13px;
+  }
+
+  .repro-step {
+    grid-template-columns: 39px minmax(0, 1fr);
+
+    gap: 14px;
+
+    padding: 19px;
+  }
+
+  .repro-step-number {
+    width: 38px;
+    height: 38px;
+
+    font-size: 0.75rem;
+  }
+
+  .repro-step-content h3 {
+    font-size: 0.98rem;
+  }
+
+  .repro-step-content p {
+    font-size: 0.86rem;
+    line-height: 1.8;
+  }
+
+  .repro-step-note {
+    padding: 13px;
+
+    font-size: 0.8rem;
+  }
+
+  /* Resource table */
+
+  .repro-resource-table {
+    min-width: 640px;
+  }
+
+  .repro-resource-table thead th {
+    padding: 15px;
+  }
+
+  .repro-resource-table tbody th,
+  .repro-resource-table tbody td {
+    padding: 16px 15px;
+
+    font-size: 0.84rem;
+  }
+
+  /* Limitations */
+
+  .repro-limitations-card {
+    padding: 23px;
+  }
+
+  .repro-limitations-card li {
+    font-size: 0.86rem;
+    line-height: 1.8;
+  }
+
+  /* Repository panel */
+
+  .repro-repository-card {
+    padding: 29px 23px;
+
+    border-radius: 18px;
+  }
+
+  .repro-repository-card > p:not(.repro-repository-eyebrow) {
+    font-size: 0.89rem;
+  }
+
+  .repro-repository-actions {
+    flex-direction: column;
+  }
+
+  .repro-repository-button {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------
+   16. SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+  .repro-step {
+    grid-template-columns: 34px minmax(0, 1fr);
+
+    gap: 11px;
+
+    padding: 16px;
+  }
+
+  .repro-step-number {
+    width: 33px;
+    height: 33px;
+
+    font-size: 0.7rem;
+  }
+
+  .repro-step-content h3 {
+    font-size: 0.94rem;
+  }
+
+  .repro-step-content p {
+    font-size: 0.83rem;
+  }
+
+  .repro-limitations-card {
+    padding: 20px;
+  }
+}
+
+/* ---------------------------------------------------------
+   17. REDUCED MOTION ACCESSIBILITY
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .repro-fact-card,
+  .repro-step,
+  .repro-repository-button,
+  .repro-inline-link {
+    transition: none;
+  }
+
+  .repro-fact-card:hover,
+  .repro-repository-button:hover {
+    transform: none;
+  }
+}
+/* =========================================================
+   PHASE 8F-B — HOMEPAGE RESOURCE GRID
+   Six Research Navigation Cards
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. DEFAULT GRID
+   Two columns for smaller screens
+   --------------------------------------------------------- */
+
+.home-page .resource-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+/* ---------------------------------------------------------
+   2. DESKTOP
+   Three columns, two rows
+   --------------------------------------------------------- */
+
+@media (min-width: 860px) {
+  .home-page .resource-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+  }
+
+  .home-page .resource-card {
+    min-width: 0;
+    min-height: 112px;
+
+    padding: 20px 18px;
+
+    gap: 14px;
+  }
+
+  .home-page .resource-icon {
+    width: 48px;
+    height: 48px;
+
+    flex: 0 0 48px;
+  }
+
+  .home-page .resource-name {
+    min-width: 0;
+
+    font-size: 0.98rem;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+  }
+}
+
+/* ---------------------------------------------------------
+   3. TABLET
+   Two columns, three rows
+   --------------------------------------------------------- */
+
+@media (min-width: 601px) and (max-width: 859px) {
+  .home-page .resource-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+  .home-page .resource-card {
+    min-width: 0;
+
+    padding: 19px;
+  }
+
+  .home-page .resource-name {
+    font-size: 0.96rem;
+
+    overflow-wrap: anywhere;
+  }
+}
+
+/* ---------------------------------------------------------
+   4. MOBILE
+   Two columns, three rows
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  .home-page .resource-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .home-page .resource-card {
+    min-width: 0;
+    min-height: 145px;
+
+    padding: 18px 11px;
+
+    gap: 12px;
+
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .home-page .resource-icon {
+    width: 46px;
+    height: 46px;
+
+    flex: 0 0 46px;
+  }
+
+  .home-page .resource-name {
+    font-size: 0.88rem;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+  }
+
+  .home-page .resource-arrow {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    margin: 0;
+  }
+}
+
+/* ---------------------------------------------------------
+   5. SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+  .home-page .resource-grid {
+    gap: 10px;
+  }
+
+  .home-page .resource-card {
+    min-height: 140px;
+
+    padding: 16px 8px;
+
+    gap: 10px;
+  }
+
+  .home-page .resource-name {
+    font-size: 0.82rem;
+  }
+
+  .home-page .resource-icon {
+    width: 43px;
+    height: 43px;
+
+    flex: 0 0 43px;
+  }
+
+  .home-page .resource-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* ---------------------------------------------------------
+   6. ACCESSIBILITY
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page .resource-card,
+  .home-page .resource-arrow {
+    transition: none;
+  }
+}
