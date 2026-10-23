@@ -1,0 +1,6 @@
+Metric,Fair_Mean,Dark_Mean,Delta_Dark_minus_Fair,Exact_P,Holm_P,Holm_Supported
+AUC,0.827458,0.876408,0.048949,0.0625,0.3125,False
+Recall,0.768548,0.797368,0.02882,0.0625,0.3125,False
+FPR,0.264435,0.223256,-0.041179,0.0625,0.3125,False
+Brier,0.201716,0.167769,-0.033947,0.0625,0.3125,False
+Entropy,0.208701,0.210304,0.001603,1.0,1.0,False

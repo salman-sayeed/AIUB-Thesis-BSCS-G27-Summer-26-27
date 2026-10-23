@@ -1,0 +1,8 @@
+Metric,Lambda0_Mean,Lambda1_Mean,Mean_Delta_1_minus_0,Wilcoxon_W,Exact_P,Holm_P,Holm_Supported
+Worst_Domain_AUC,0.827458,0.821295,-0.006163,4.0,0.4375,1.0,False
+Mean_Domain_AUC,0.851933,0.847092,-0.004841,4.0,0.4375,1.0,False
+Fair_AUC,0.827458,0.821295,-0.006163,4.0,0.4375,1.0,False
+Dark_AUC,0.876408,0.872889,-0.003519,7.0,1.0,1.0,False
+AUC_Gap,0.048949,0.051594,0.002644,7.0,1.0,1.0,False
+Recall_Gap,0.02882,0.013328,-0.015492,2.0,0.1875,1.0,False
+FNR_Gap,0.02882,0.013328,-0.015492,2.0,0.1875,1.0,False

@@ -1,0 +1,6 @@
+Metric,Friedman_Q,Exact_P,Kendalls_W,Holm_P,Supported_After_Holm
+AUC_Gap,0.4,0.953704,0.04,1.0,False
+Recall_Gap,5.2,0.093364,0.52,0.373457,False
+Accuracy_Gap,0.4,0.953704,0.04,1.0,False
+F1_Gap,6.4,0.039352,0.64,0.196759,False
+Dark_AUC,5.2,0.093364,0.52,0.373457,False

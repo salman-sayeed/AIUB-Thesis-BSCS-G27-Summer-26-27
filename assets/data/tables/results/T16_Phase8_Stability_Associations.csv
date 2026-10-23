@@ -1,0 +1,4 @@
+Association,Spearman_Rho,P_Value
+Ensemble entropy vs mean CAM correlation,-0.261538,0.366411
+Probability SD vs mean CAM correlation,-0.279121,0.333845
+Ensemble entropy vs mean CAM spatial SD,0.367033,0.196739

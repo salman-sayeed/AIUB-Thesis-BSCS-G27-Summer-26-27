@@ -1239,3 +1239,531 @@ button:focus-visible {
     animation: none;
   }
 }
+
+/* =========================================
+   TABLES PAGE
+   ========================================= */
+
+/* ---------- PAGE LAYOUT ---------- */
+
+.tables-page {
+  padding-top: 34px;
+  padding-bottom: 80px;
+}
+
+/* ---------- PAGE INTRODUCTION ---------- */
+
+.tables-intro {
+  max-width: 760px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.tables-title {
+  margin: 0;
+
+  font-size: clamp(2rem, 4.5vw, 2.75rem);
+  font-weight: 650;
+
+  line-height: 1.2;
+  letter-spacing: -0.045em;
+
+  color: var(--text);
+}
+
+.tables-description {
+  max-width: 620px;
+  margin: 16px auto 0;
+
+  font-size: 0.98rem;
+  line-height: 1.75;
+
+  color: var(--text-secondary);
+}
+
+.tables-total {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px auto 0;
+  padding: 6px 14px;
+
+  background: var(--primary-soft);
+  border: 1px solid #dce8f3;
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  color: var(--primary);
+}
+
+/* ---------- SECTION HEADING ---------- */
+
+.tables-section {
+  width: 100%;
+}
+
+.tables-section-heading {
+  margin-bottom: 24px;
+}
+
+.tables-section-heading h2 {
+  margin: 0;
+
+  font-size: clamp(1.25rem, 2.6vw, 1.55rem);
+  font-weight: 650;
+
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+
+  color: var(--text);
+}
+
+.tables-section-heading p {
+  margin: 9px 0 0;
+
+  font-size: 0.91rem;
+  line-height: 1.7;
+
+  color: var(--text-secondary);
+}
+
+/* ---------- PHASE FILTER SPACING ---------- */
+
+/*
+   Phase buttons reuse the existing
+   .phase-filter design from the Figures page.
+*/
+
+.table-phase-filters {
+  margin-bottom: 30px;
+}
+
+/* ---------- LOADING STATUS ---------- */
+
+.tables-status {
+  padding: 28px 20px;
+  margin-bottom: 20px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+
+  color: var(--text-secondary);
+}
+
+.tables-status[hidden] {
+  display: none !important;
+}
+
+/* ---------- TABLE LIST ---------- */
+
+.tables-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+/* ---------- INDIVIDUAL TABLE CARDS ---------- */
+
+.table-card {
+  min-width: 0;
+  overflow: hidden;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+}
+
+.table-card[hidden] {
+  display: none !important;
+}
+
+/* ---------- TABLE CARD HEADER ---------- */
+
+.table-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+  padding: 22px 24px;
+
+  background: var(--surface);
+
+  border-bottom: 1px solid var(--border);
+}
+
+.table-card-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 12px;
+  min-width: 0;
+}
+
+.table-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  min-width: 44px;
+  padding: 6px 10px;
+
+  background: var(--primary-soft);
+  border-radius: 8px;
+
+  font-size: 0.77rem;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: var(--primary);
+}
+
+.table-card-title {
+  margin: 0;
+
+  font-size: 1.03rem;
+  font-weight: 650;
+  line-height: 1.5;
+
+  letter-spacing: -0.012em;
+
+  color: var(--text);
+}
+
+.table-phase {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  padding: 5px 11px;
+
+  background: var(--surface-soft);
+  border-radius: 999px;
+
+  font-size: 0.76rem;
+  font-weight: 600;
+
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* =========================================
+   RESPONSIVE HTML TABLES
+   ========================================= */
+
+/* ---------- HORIZONTAL SCROLL REGION ---------- */
+
+.table-scroll {
+  width: 100%;
+  max-width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-color: #bdcddd #f1f5f9;
+  scrollbar-width: thin;
+}
+
+.table-scroll:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: -3px;
+}
+
+/* ---------- TABLE STRUCTURE ---------- */
+
+.research-table {
+  width: 100%;
+  min-width: max-content;
+
+  margin: 0;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  font-size: 0.87rem;
+  line-height: 1.55;
+
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- COLUMN HEADERS ---------- */
+
+.research-table thead {
+  background: #edf3f9;
+}
+
+.research-table th {
+  padding: 14px 17px;
+
+  border-bottom: 1px solid #d7e3ef;
+
+  font-size: 0.79rem;
+  font-weight: 700;
+  line-height: 1.5;
+
+  text-align: left;
+  white-space: nowrap;
+
+  color: var(--primary);
+}
+
+/* ---------- TABLE BODY ---------- */
+
+.research-table td {
+  padding: 13px 17px;
+
+  border-bottom: 1px solid #edf0f4;
+
+  font-size: 0.86rem;
+  line-height: 1.6;
+
+  text-align: left;
+  white-space: nowrap;
+
+  color: var(--text);
+}
+
+/* ---------- FIRST COLUMN ---------- */
+
+.research-table th:first-child,
+.research-table td:first-child {
+  min-width: 140px;
+  max-width: 320px;
+
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* ---------- ROW STYLING ---------- */
+
+.research-table tbody tr:nth-child(even) {
+  background: #fafcfe;
+}
+
+.research-table tbody tr:hover {
+  background: #f3f7fb;
+}
+
+.research-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- NUMERIC VALUES ---------- */
+
+.research-table .is-numeric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- HORIZONTAL SCROLL HINT ---------- */
+
+.table-scroll-hint {
+  display: none;
+
+  margin: 0;
+  padding: 10px 16px;
+
+  border-top: 1px solid var(--border);
+
+  background: #fafcfe;
+
+  font-size: 0.76rem;
+  line-height: 1.5;
+
+  color: var(--text-muted);
+}
+
+/* ---------- TABLE ERROR MESSAGE ---------- */
+
+.table-error {
+  margin: 0;
+  padding: 18px 20px;
+
+  background: #fff8f7;
+  color: #a43b31;
+
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.table-error[hidden] {
+  display: none !important;
+}
+
+/* ---------- EMPTY STATE ---------- */
+
+.table-empty {
+  padding: 30px 20px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  text-align: center;
+
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* ---------- NO JAVASCRIPT MESSAGE ---------- */
+
+.tables-noscript {
+  padding: 18px;
+
+  background: #fff8e8;
+  border: 1px solid #f3dfb5;
+  border-radius: var(--radius-md);
+
+  font-size: 0.88rem;
+  text-align: center;
+
+  color: #835d24;
+}
+
+/* =========================================
+   TABLES - TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+  .tables-page {
+    padding-top: 28px;
+    padding-bottom: 60px;
+  }
+
+  .tables-list {
+    gap: 20px;
+  }
+
+  .table-card-header {
+    padding: 18px 20px;
+  }
+
+  .research-table th {
+    padding: 12px 14px;
+  }
+
+  .research-table td {
+    padding: 12px 14px;
+  }
+}
+
+/* =========================================
+   TABLES - MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .tables-page {
+    padding-top: 22px;
+    padding-bottom: 48px;
+  }
+
+  .tables-intro {
+    margin-bottom: 30px;
+  }
+
+  .tables-description {
+    font-size: 0.9rem;
+  }
+
+  .tables-section-heading {
+    margin-bottom: 20px;
+  }
+
+  .table-phase-filters {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .tables-list {
+    gap: 18px;
+  }
+
+  .table-card {
+    border-radius: var(--radius-md);
+  }
+
+  .table-card-header {
+    padding: 16px;
+
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .table-card-heading {
+    gap: 10px;
+  }
+
+  .table-card-title {
+    font-size: 0.94rem;
+  }
+
+  .table-phase {
+    font-size: 0.73rem;
+  }
+
+  .research-table {
+    font-size: 0.82rem;
+  }
+
+  .research-table th {
+    padding: 11px 13px;
+    font-size: 0.76rem;
+  }
+
+  .research-table td {
+    padding: 11px 13px;
+    font-size: 0.8rem;
+  }
+
+  .research-table th:first-child,
+  .research-table td:first-child {
+    min-width: 125px;
+    max-width: 220px;
+  }
+
+  .table-scroll-hint {
+    display: block;
+  }
+}
+
+/* =========================================
+   TABLES - SMALL PHONES
+   ========================================= */
+
+@media (max-width: 360px) {
+  .table-card-header {
+    padding: 14px;
+  }
+
+  .table-card-title {
+    font-size: 0.88rem;
+  }
+
+  .research-table th,
+  .research-table td {
+    padding: 10px 11px;
+  }
+}

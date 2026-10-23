@@ -1,0 +1,3 @@
+Correct,N,CAM_Correlation_Mean,CAM_Correlation_SD,Central_Attention_Mean,Border_Attention_Mean,High_Activation_Area_Mean,CAM_Concentration_Mean
+False,6,0.64409,0.243576,0.412043,0.329742,0.299532,1.518647
+True,8,0.578486,0.215092,0.370364,0.364245,0.46728,1.324512

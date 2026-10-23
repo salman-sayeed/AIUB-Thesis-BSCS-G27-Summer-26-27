@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#f8fafc" />
+
+    <meta
+      name="description"
+      content="Experimental results tables and statistical analyses from AIUB Thesis Group G27."
+    />
+
+    <title>Research Tables | Thesis Group G27</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- =====================================
+       HEADER
+       ===================================== -->
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a
+          href="../index.html"
+          class="logo-link"
+          aria-label="Return to Thesis Group G27 homepage"
+        >
+          <img
+            src="../assets/images/aiub-line-logo.svg"
+            alt="American International University-Bangladesh seal"
+            class="aiub-logo"
+            width="94"
+            height="94"
+          />
+        </a>
+      </div>
+
+      <p class="university-name">
+        American International University-Bangladesh
+      </p>
+
+      <div class="header-divider" aria-hidden="true"></div>
+    </header>
+
+    <!-- =====================================
+       MAIN CONTENT
+       ===================================== -->
+
+    <main id="main-content" class="site-main tables-page">
+      <!-- BACK NAVIGATION -->
+
+      <a href="../index.html" class="page-back"> ← Back to Home </a>
+
+      <!-- =====================================
+         PAGE INTRODUCTION
+         ===================================== -->
+
+      <section class="tables-intro">
+        <p class="page-eyebrow">G27 Research Archive</p>
+
+        <h1 class="tables-title">Research Tables</h1>
+
+        <p class="tables-description">
+          Experimental performance results, statistical comparisons, and
+          supporting analyses organized by research phase.
+        </p>
+
+        <p class="tables-total">17 Tables</p>
+      </section>
+
+      <!-- =====================================
+         TABLE CATEGORY
+         ===================================== -->
+
+      <section class="tables-section" aria-labelledby="results-heading">
+        <div class="tables-section-heading">
+          <h2 id="results-heading">Results Tables</h2>
+
+          <p>Select an experimental phase to view its corresponding tables.</p>
+        </div>
+
+        <!-- =================================
+           PHASE FILTER BUTTONS
+           ================================= -->
+
+        <div
+          class="phase-filters table-phase-filters"
+          role="group"
+          aria-label="Filter research tables by phase"
+        >
+          <button
+            type="button"
+            class="phase-filter is-active"
+            data-phase="all"
+            aria-pressed="true"
+          >
+            All Phases
+          </button>
+
+          <button
+            type="button"
+            class="phase-filter"
+            data-phase="2"
+            aria-pressed="false"
+          >
+            Phase 2
+          </button>
+
+          <button
+            type="button"
+            class="phase-filter"
+            data-phase="3"
+            aria-pressed="false"
+          >
+            Phase 3
+          </button>
+
+          <button
+            type="button"
+            class="phase-filter"
+            data-phase="4"
+            aria-pressed="false"
+          >
+            Phase 4
+          </button>
+
+          <button
+            type="button"
+            class="phase-filter"
+            data-phase="5"
+            aria-pressed="false"
+          >
+            Phase 5
+          </button>
+
+          <button
+            type="button"
+            class="phase-filter"
+            data-phase="6"
+            aria-pressed="false"
+          >
+            Phase 6
+          </button>
+
+          <button
+            type="button"
+            class="phase-filter"
+            data-phase="7"
+            aria-pressed="false"
+          >
+            Phase 7
+          </button>
+
+          <button
+            type="button"
+            class="phase-filter"
+            data-phase="8"
+            aria-pressed="false"
+          >
+            Phase 8
+          </button>
+        </div>
+
+        <!-- =================================
+           DYNAMIC TABLE AREA
+           ================================= -->
+
+        <div
+          id="tables-status"
+          class="tables-status"
+          role="status"
+          aria-live="polite"
+        >
+          Loading research tables…
+        </div>
+
+        <div id="tables-list" class="tables-list">
+          <!--
+          The tables.js script will generate
+          accessible HTML tables here from
+          the original CSV files.
+        --></div>
+
+        <!-- JAVASCRIPT DISABLED MESSAGE -->
+
+        <noscript>
+          <p class="tables-noscript">
+            JavaScript is required to display the research tables.
+          </p>
+        </noscript>
+      </section>
+    </main>
+
+    <!-- =====================================
+       FOOTER
+       ===================================== -->
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-primary">Department of Computer Science</p>
+
+        <p class="footer-secondary">
+          American International University-Bangladesh
+        </p>
+
+        <p class="footer-secondary">Thesis Group G27 · Summer 2025–2026</p>
+      </div>
+    </footer>
+
+    <!-- =====================================
+       JAVASCRIPT
+       ===================================== -->
+
+    <script src="../assets/js/tables.js" defer></script>
+  </body>
+</html>

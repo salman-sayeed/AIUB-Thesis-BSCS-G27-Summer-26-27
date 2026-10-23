@@ -1,0 +1,4 @@
+Group,N,Accuracy,Precision,Recall,F1,ROC_AUC,Balanced_Accuracy
+Overall,648,0.8164,0.8782,0.7346,0.8,0.8972,0.8164
+Fair/Light,486,0.8128,0.8651,0.75,0.8035,0.8924,0.8141
+Dark,162,0.8272,0.9286,0.6842,0.7879,0.9129,0.8188

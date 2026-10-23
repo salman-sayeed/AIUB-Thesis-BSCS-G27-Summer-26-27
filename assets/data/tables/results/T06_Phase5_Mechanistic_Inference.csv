@@ -1,0 +1,9 @@
+Family,Outcome,Class,Friedman_Q,Exact_P,Kendalls_W,Holm_P,Supported_After_Holm
+Prediction behavior,Malignant probability difference,Benign,7.6,0.02392,0.76,0.071759,False
+Prediction behavior,Malignant probability difference,Malignant,7.6,0.02392,0.76,0.071759,False
+Prediction behavior,Predictive entropy difference,Benign,7.6,0.02392,0.76,0.071759,False
+Prediction behavior,Predictive entropy difference,Malignant,10.0,0.000772,1.0,0.003086,True
+Calibration,Brier difference,Benign,3.6,0.182099,0.36,0.182099,False
+Calibration,Brier difference,Malignant,8.4,0.008488,0.84,0.016975,True
+Representation,Common-bandwidth MMD2,Benign,5.2,0.093364,0.52,0.186728,False
+Representation,Common-bandwidth MMD2,Malignant,2.8,0.367284,0.28,0.367284,False
