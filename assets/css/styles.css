@@ -166,8 +166,8 @@ button:focus-visible {
   margin: 15px auto 0;
   padding: 0 12px;
 
-  font-size: clamp(0.85rem, 1.6vw, 1rem);
-  font-weight: 600;
+  font-size: clamp(1.35rem, 2.8vw, 1.55rem);
+  font-weight: 800;
   line-height: 1.5;
   letter-spacing: 0.015em;
 
@@ -187,7 +187,7 @@ button:focus-visible {
 .group-title {
   margin: 0;
 
-  font-size: clamp(1.75rem, 3.7vw, 2.4rem);
+  font-size: clamp(1.15rem, 2.8vw, 1.45rem);
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.035em;
@@ -210,13 +210,14 @@ button:focus-visible {
   margin: 30px auto 0;
 
   font-size: clamp(1.05rem, 2.1vw, 1.3rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.65;
 
   letter-spacing: -0.012em;
   text-wrap: balance;
 
-  color: var(--primary);
+  /* color: var(--primary); */
+  color: #4169e1;
 }
 
 /* ---------- SHARED SECTION LABELS ---------- */
@@ -1765,5 +1766,553 @@ button:focus-visible {
   .research-table th,
   .research-table td {
     padding: 10px 11px;
+  }
+}
+/* =========================================================
+   PHASE 5B — REFERENCES PAGE
+   Thesis Group G27
+   Modern Light Academic Design
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. PAGE LAYOUT
+   --------------------------------------------------------- */
+
+.references-page {
+  --ref-navy: #173454;
+  --ref-text: #34465c;
+  --ref-muted: #6d7d90;
+  --ref-blue: #1768ac;
+  --ref-border: #e3eaf1;
+  --ref-surface: #ffffff;
+  --ref-soft: #f3f7fb;
+
+  width: calc(100% - 40px);
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 100px;
+}
+
+/* ---------------------------------------------------------
+   2. PAGE INTRODUCTION
+   --------------------------------------------------------- */
+
+.references-intro {
+  margin-top: 35px;
+  margin-bottom: 36px;
+}
+
+.references-eyebrow {
+  margin: 0 0 12px;
+
+  color: var(--ref-blue);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.references-title {
+  margin: 0;
+
+  color: var(--ref-navy);
+
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.12;
+}
+
+.references-description {
+  max-width: 650px;
+
+  margin: 18px 0 0;
+
+  color: var(--ref-muted);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   3. REFERENCE METADATA
+   --------------------------------------------------------- */
+
+.references-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 24px;
+
+  color: var(--ref-muted);
+
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.references-total {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 13px;
+
+  color: var(--ref-navy);
+  background: #eaf2f9;
+
+  border: 1px solid #d9e7f3;
+  border-radius: 999px;
+
+  font-weight: 600;
+}
+
+.references-meta-divider {
+  width: 4px;
+  height: 4px;
+
+  background: #9aabba;
+  border-radius: 50%;
+}
+
+.references-format {
+  color: var(--ref-muted);
+}
+
+/* ---------------------------------------------------------
+   4. SEARCH SECTION
+   --------------------------------------------------------- */
+
+.references-controls {
+  padding: 24px;
+
+  margin-bottom: 40px;
+
+  background: var(--ref-surface);
+
+  border: 1px solid var(--ref-border);
+  border-radius: 18px;
+
+  box-shadow: 0 5px 22px rgba(23, 52, 84, 0.035);
+}
+
+.references-search-label {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: var(--ref-navy);
+
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.references-search-wrapper {
+  position: relative;
+}
+
+.references-search-input {
+  display: block;
+
+  width: 100%;
+  min-height: 52px;
+
+  padding: 13px 16px 13px 48px;
+
+  color: var(--ref-navy);
+  background: #f9fbfd;
+
+  border: 1px solid #dce5ee;
+  border-radius: 12px;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.4;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.references-search-input::placeholder {
+  color: #94a2b1;
+}
+
+.references-search-input:focus {
+  background: #ffffff;
+
+  border-color: #5c9ace;
+
+  box-shadow: 0 0 0 4px rgba(23, 104, 172, 0.1);
+}
+
+.references-search-input:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* ---------------------------------------------------------
+   5. SEARCH ICON
+
+   Drawn using CSS, so no icon library is required.
+   --------------------------------------------------------- */
+
+.references-search-icon {
+  position: absolute;
+
+  left: 17px;
+  top: 50%;
+
+  width: 18px;
+  height: 18px;
+
+  transform: translateY(-50%);
+
+  color: #8294a8;
+  font-size: 0;
+
+  pointer-events: none;
+}
+
+.references-search-icon::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 11px;
+  height: 11px;
+
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.references-search-icon::after {
+  content: "";
+
+  position: absolute;
+
+  left: 12px;
+  top: 12px;
+
+  width: 7px;
+  height: 2px;
+
+  background: currentColor;
+  border-radius: 2px;
+
+  transform: rotate(45deg);
+  transform-origin: left center;
+}
+
+/* ---------------------------------------------------------
+   6. SEARCH RESULTS COUNT
+   --------------------------------------------------------- */
+
+.references-count {
+  margin: 13px 0 0;
+
+  color: var(--ref-muted);
+
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------------------
+   7. REFERENCES SECTION
+   --------------------------------------------------------- */
+
+.references-section {
+  margin-top: 0;
+}
+
+.references-section-heading {
+  margin: 0 0 20px;
+
+  color: var(--ref-navy);
+
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+/* ---------------------------------------------------------
+   8. REFERENCE LIST CONTAINER
+   --------------------------------------------------------- */
+
+.references-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background: var(--ref-surface);
+
+  border: 1px solid var(--ref-border);
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 30px rgba(23, 52, 84, 0.035);
+}
+
+/* Hide the empty container until references are added */
+
+.references-list:empty {
+  display: none;
+}
+
+/* ---------------------------------------------------------
+   9. APA REFERENCE ENTRIES
+
+   APA hanging indentation:
+   First line starts farther left.
+   Following lines are indented.
+   --------------------------------------------------------- */
+
+.references-list > li {
+  margin: 0;
+
+  padding: 22px 26px 22px 54px;
+
+  color: var(--ref-text);
+
+  font-size: 0.94rem;
+  font-weight: 400;
+  line-height: 1.85;
+
+  text-indent: -28px;
+  overflow-wrap: anywhere;
+
+  border-bottom: 1px solid #edf1f5;
+
+  transition: background-color 0.18s ease;
+}
+
+.references-list > li:last-child {
+  border-bottom: none;
+}
+
+.references-list > li:hover {
+  background: #fafcfe;
+}
+
+/* ---------------------------------------------------------
+   10. APA ITALICS
+   --------------------------------------------------------- */
+
+.references-list em,
+.references-list cite {
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------
+   11. DOI AND WEBSITE LINKS
+   --------------------------------------------------------- */
+
+.references-list a {
+  color: var(--ref-blue);
+
+  text-decoration: underline;
+  text-decoration-color: rgba(23, 104, 172, 0.3);
+  text-underline-offset: 3px;
+
+  overflow-wrap: anywhere;
+
+  transition:
+    color 0.18s ease,
+    text-decoration-color 0.18s ease;
+}
+
+.references-list a:hover {
+  color: #0b477b;
+  text-decoration-color: currentColor;
+}
+
+.references-list a:focus-visible {
+  outline: 2px solid var(--ref-blue);
+  outline-offset: 3px;
+
+  border-radius: 2px;
+}
+
+/* ---------------------------------------------------------
+   12. LOADING STATUS
+   --------------------------------------------------------- */
+
+.references-status {
+  margin: 0;
+  padding: 26px;
+
+  color: var(--ref-muted);
+  background: var(--ref-soft);
+
+  border: 1px solid var(--ref-border);
+  border-radius: 14px;
+
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------
+   13. EMPTY SEARCH RESULTS
+   --------------------------------------------------------- */
+
+.references-empty {
+  padding: 55px 24px;
+
+  background: var(--ref-surface);
+
+  border: 1px solid var(--ref-border);
+  border-radius: 18px;
+
+  text-align: center;
+}
+
+.references-empty-title {
+  margin: 0 0 8px;
+
+  color: var(--ref-navy);
+
+  font-size: 1.08rem;
+  font-weight: 650;
+}
+
+.references-empty-description {
+  max-width: 380px;
+
+  margin: 0 auto;
+
+  color: var(--ref-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ---------------------------------------------------------
+   14. HIDDEN ELEMENTS
+   --------------------------------------------------------- */
+
+.references-page [hidden] {
+  display: none !important;
+}
+
+/* ---------------------------------------------------------
+   15. TABLET RESPONSIVENESS
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .references-page {
+    padding-top: 24px;
+    padding-bottom: 75px;
+  }
+
+  .references-intro {
+    margin-top: 26px;
+    margin-bottom: 30px;
+  }
+
+  .references-controls {
+    padding: 20px;
+    margin-bottom: 32px;
+  }
+
+  .references-list > li {
+    padding: 19px 22px 19px 48px;
+
+    text-indent: -26px;
+
+    font-size: 0.92rem;
+    line-height: 1.8;
+  }
+}
+
+/* ---------------------------------------------------------
+   16. MOBILE RESPONSIVENESS
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .references-page {
+    width: calc(100% - 32px);
+
+    padding-top: 16px;
+    padding-bottom: 60px;
+  }
+
+  .references-intro {
+    margin-top: 20px;
+    margin-bottom: 26px;
+  }
+
+  .references-eyebrow {
+    font-size: 0.7rem;
+  }
+
+  .references-description {
+    margin-top: 14px;
+
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .references-meta {
+    gap: 9px;
+    margin-top: 20px;
+  }
+
+  .references-controls {
+    padding: 16px;
+
+    margin-bottom: 28px;
+
+    border-radius: 14px;
+  }
+
+  .references-search-input {
+    min-height: 50px;
+
+    font-size: 0.9rem;
+  }
+
+  .references-section-heading {
+    margin-bottom: 15px;
+
+    font-size: 1.08rem;
+  }
+
+  .references-list {
+    border-radius: 14px;
+  }
+
+  .references-list > li {
+    padding: 19px 15px 19px 39px;
+
+    text-indent: -24px;
+
+    font-size: 0.87rem;
+    line-height: 1.8;
+  }
+
+  .references-empty {
+    padding: 42px 18px;
+  }
+}
+
+/* ---------------------------------------------------------
+   17. REDUCED MOTION
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .references-search-input,
+  .references-list > li,
+  .references-list a {
+    transition: none;
   }
 }

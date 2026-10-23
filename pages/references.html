@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#f8fafc" />
+
+    <meta
+      name="description"
+      content="APA 7th edition scholarly references supporting AIUB Thesis Group G27's research."
+    />
+
+    <title>References | Thesis Group G27</title>
+
+    <!-- SHARED STYLESHEET -->
+
+    <link rel="stylesheet" href="../assets/css/styles.css?v=5b" />
+  </head>
+
+  <body>
+    <!-- =====================================
+       HEADER
+       ===================================== -->
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a
+          href="../index.html"
+          class="logo-link"
+          aria-label="Return to Thesis Group G27 homepage"
+        >
+          <img
+            src="../assets/images/aiub-line-logo.svg"
+            alt="American International University-Bangladesh seal"
+            class="aiub-logo"
+            width="94"
+            height="94"
+          />
+        </a>
+      </div>
+
+      <p class="university-name">
+        American International University-Bangladesh
+      </p>
+
+      <div class="header-divider" aria-hidden="true"></div>
+    </header>
+
+    <!-- =====================================
+       MAIN CONTENT
+       ===================================== -->
+
+    <main id="main-content" class="site-main tables-page">
+      <!-- BACK NAVIGATION -->
+
+      <a href="../index.html" class="page-back"> ← Back to Home </a>
+
+      <!-- =====================================
+         PAGE INTRODUCTION
+         ===================================== -->
+
+      <section class="tables-intro">
+        <p class="page-eyebrow">G27 Research Archive</p>
+
+        <h1 class="tables-title">References</h1>
+
+        <p class="tables-description">
+          Scholarly publications and supporting literature referenced throughout
+          the study, presented alphabetically using APA 7th edition style.
+        </p>
+
+        <p class="tables-total">34 References</p>
+      </section>
+
+      <!-- =====================================
+         REFERENCES SECTION
+         ===================================== -->
+
+      <section class="tables-section" aria-labelledby="references-heading">
+        <!-- SECTION HEADING -->
+
+        <div class="tables-section-heading">
+          <h2 id="references-heading">Reference List</h2>
+
+          <p>
+            Browse the complete bibliography or search by author, publication
+            year, or keyword.
+          </p>
+        </div>
+
+        <!-- =================================
+           SEARCH
+           ================================= -->
+
+        <div
+          class="references-controls"
+          role="search"
+          aria-label="Search research references"
+        >
+          <label class="references-search-label" for="references-search">
+            Search References
+          </label>
+
+          <div class="references-search-wrapper">
+            <span class="references-search-icon" aria-hidden="true">
+              &#9906;
+            </span>
+
+            <input
+              type="search"
+              id="references-search"
+              class="references-search-input"
+              placeholder="Search by author, year, or title..."
+              autocomplete="off"
+              disabled
+            />
+          </div>
+
+          <p id="references-count" class="references-count" aria-live="polite">
+            34 references
+          </p>
+        </div>
+
+        <!-- =================================
+           LOADING STATUS
+           ================================= -->
+
+        <div
+          id="references-status"
+          class="tables-status"
+          role="status"
+          aria-live="polite"
+        >
+          Preparing references...
+        </div>
+
+        <!-- =================================
+           DYNAMIC REFERENCES LIST
+           ================================= -->
+
+        <ul
+          id="references-list"
+          class="references-list"
+          aria-label="APA 7th edition reference list"
+        >
+          <!--
+          references.js inserts all
+          34 references here.
+        --></ul>
+
+        <!-- =================================
+           EMPTY SEARCH RESULTS
+           ================================= -->
+
+        <div id="references-empty" class="references-empty" hidden>
+          <p class="references-empty-title">No matching references</p>
+
+          <p class="references-empty-description">
+            Try searching for a different author, publication year, or keyword.
+          </p>
+        </div>
+
+        <!-- JAVASCRIPT DISABLED MESSAGE -->
+
+        <noscript>
+          <p class="tables-noscript">
+            JavaScript is required to display and search the reference list.
+          </p>
+        </noscript>
+      </section>
+    </main>
+
+    <!-- =====================================
+       FOOTER
+       ===================================== -->
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-primary">Department of Computer Science</p>
+
+        <p class="footer-secondary">
+          American International University-Bangladesh
+        </p>
+
+        <p class="footer-secondary">Thesis Group G27 · Summer 2025–2026</p>
+      </div>
+    </footer>
+
+    <!-- =====================================
+       JAVASCRIPT
+       ===================================== -->
+
+    <script src="../assets/js/references.js" defer></script>
+  </body>
+</html>
