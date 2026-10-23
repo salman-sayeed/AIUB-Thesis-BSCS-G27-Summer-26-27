@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8fafc" />
+
+    <meta
+      name="description"
+      content="Explore and download the eight Jupyter notebooks used in the skin lesion classification research conducted by AIUB Thesis Group G27."
+    />
+
+    <title>Research Notebooks | Thesis BSCS G27</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a
+          href="../index.html"
+          class="logo-link"
+          aria-label="Return to Thesis Group G27 homepage"
+        >
+          <img
+            src="../assets/images/aiub-line-logo.svg"
+            alt="American International University-Bangladesh seal"
+            class="aiub-logo"
+            width="94"
+            height="94"
+          />
+        </a>
+      </div>
+
+      <p class="university-name">
+        American International University-Bangladesh
+      </p>
+
+      <div class="header-divider" aria-hidden="true"></div>
+    </header>
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
+
+    <main id="main-content" class="site-main tables-page notebooks-page">
+      <a href="../index.html" class="page-back"> ← Back to Home </a>
+
+      <!-- PAGE INTRODUCTION -->
+
+      <section class="tables-intro">
+        <p class="page-eyebrow">G27 Research Archive</p>
+
+        <h1 class="tables-title">Research Notebooks</h1>
+
+        <p class="tables-description">
+          Explore the Jupyter notebooks behind our research. Each notebook
+          represents a stage of the study, from understanding the dataset to
+          examining model performance, domain differences, and visual
+          explanations.
+        </p>
+
+        <p class="tables-total">8 Research Notebooks</p>
+      </section>
+
+      <!-- IMPORTANT INFORMATION -->
+
+      <aside
+        class="notebooks-notice"
+        aria-label="Important information about these notebooks"
+      >
+        <div class="notebooks-notice-icon" aria-hidden="true">i</div>
+
+        <div class="notebooks-notice-content">
+          <h2>About These Public Copies</h2>
+
+          <p>
+            The notebooks preserve the research code and written explanations.
+            Saved execution outputs, including embedded clinical images, have
+            been removed from these downloadable copies.
+          </p>
+
+          <p>
+            Some notebooks require external dataset files, trained model
+            checkpoints, or changes to Google Drive paths. They are provided as
+            research archives and may require configuration before they can be
+            executed again.
+          </p>
+        </div>
+      </aside>
+
+      <!-- ========================================
+           NOTEBOOK COLLECTION
+      ========================================= -->
+
+      <section
+        class="tables-section notebook-section"
+        aria-labelledby="notebook-collection-heading"
+      >
+        <div class="tables-section-heading">
+          <h2 id="notebook-collection-heading">Explore the Research Code</h2>
+
+          <p>
+            Browse the eight research phases below. You can preview each
+            notebook on GitHub or download its original Jupyter format.
+          </p>
+        </div>
+
+        <div class="notebook-grid">
+          <!-- NOTEBOOK 01 -->
+
+          <article class="notebook-card">
+            <div class="notebook-card-top">
+              <span class="notebook-phase"> Phase 01 </span>
+
+              <span class="notebook-category"> Data Exploration </span>
+            </div>
+
+            <h3 class="notebook-title">Initial Dataset Analysis</h3>
+
+            <p class="notebook-description">
+              Examines the dataset's characteristics and provides an initial
+              understanding of its labels, skin-tone categories, and data
+              distribution.
+            </p>
+
+            <p class="notebook-filename">
+              <code>P01_Initial_Analysis.ipynb</code>
+            </p>
+
+            <div class="notebook-actions">
+              <a
+                class="notebook-button notebook-button-primary"
+                href="../notebooks/P01_Initial_Analysis.ipynb"
+                download
+              >
+                Download Notebook ↓
+              </a>
+
+              <a
+                class="notebook-button notebook-button-secondary"
+                href="https://github.com/salman-sayeed/AIUB-Thesis-BSCS-G27-Summer-26-27/blob/main/notebooks/P01_Initial_Analysis.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- NOTEBOOK 02 -->
+
+          <article class="notebook-card">
+            <div class="notebook-card-top">
+              <span class="notebook-phase"> Phase 02 </span>
+
+              <span class="notebook-category"> Baseline Model </span>
+            </div>
+
+            <h3 class="notebook-title">Baseline ResNet50 Classification</h3>
+
+            <p class="notebook-description">
+              Establishes a ResNet50-based approach for classifying skin lesions
+              as benign or malignant and provides a foundation for later
+              comparisons.
+            </p>
+
+            <p class="notebook-filename">
+              <code>P02_Baseline_ResNet50.ipynb</code>
+            </p>
+
+            <div class="notebook-actions">
+              <a
+                class="notebook-button notebook-button-primary"
+                href="../notebooks/P02_Baseline_ResNet50.ipynb"
+                download
+              >
+                Download Notebook ↓
+              </a>
+
+              <a
+                class="notebook-button notebook-button-secondary"
+                href="https://github.com/salman-sayeed/AIUB-Thesis-BSCS-G27-Summer-26-27/blob/main/notebooks/P02_Baseline_ResNet50.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- NOTEBOOK 03 -->
+
+          <article class="notebook-card">
+            <div class="notebook-card-top">
+              <span class="notebook-phase"> Phase 03 </span>
+
+              <span class="notebook-category"> Domain Generalization </span>
+            </div>
+
+            <h3 class="notebook-title">Cross-Domain Generalization</h3>
+
+            <p class="notebook-description">
+              Investigates how classification performance changes when models
+              are evaluated across different skin-tone-related domains. It also
+              examines feature-distribution differences using Maximum Mean
+              Discrepancy.
+            </p>
+
+            <p class="notebook-filename">
+              <code>P03_CrossDomain_Generalization_MMD.ipynb</code>
+            </p>
+
+            <div class="notebook-actions">
+              <a
+                class="notebook-button notebook-button-primary"
+                href="../notebooks/P03_CrossDomain_Generalization_MMD.ipynb"
+                download
+              >
+                Download Notebook ↓
+              </a>
+
+              <a
+                class="notebook-button notebook-button-secondary"
+                href="https://github.com/salman-sayeed/AIUB-Thesis-BSCS-G27-Summer-26-27/blob/main/notebooks/P03_CrossDomain_Generalization_MMD.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- NOTEBOOK 04 -->
+
+          <article class="notebook-card">
+            <div class="notebook-card-top">
+              <span class="notebook-phase"> Phase 04 </span>
+
+              <span class="notebook-category"> Training Composition </span>
+            </div>
+
+            <h3 class="notebook-title">Controlled Training Composition</h3>
+
+            <p class="notebook-description">
+              Studies how changing the proportions of lighter- and
+              darker-skin-tone-related training examples affects the model's
+              evaluated performance.
+            </p>
+
+            <p class="notebook-filename">
+              <code>P04_CORRECTED_Controlled_Mixing.ipynb</code>
+            </p>
+
+            <div class="notebook-actions">
+              <a
+                class="notebook-button notebook-button-primary"
+                href="../notebooks/P04_CORRECTED_Controlled_Mixing.ipynb"
+                download
+              >
+                Download Notebook ↓
+              </a>
+
+              <a
+                class="notebook-button notebook-button-secondary"
+                href="https://github.com/salman-sayeed/AIUB-Thesis-BSCS-G27-Summer-26-27/blob/main/notebooks/P04_CORRECTED_Controlled_Mixing.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- NOTEBOOK 05 -->
+
+          <article class="notebook-card">
+            <div class="notebook-card-top">
+              <span class="notebook-phase"> Phase 05 </span>
+
+              <span class="notebook-category"> Model Behavior </span>
+            </div>
+
+            <h3 class="notebook-title">Mechanistic Analysis</h3>
+
+            <p class="notebook-description">
+              Examines aspects of model behavior, including prediction
+              uncertainty, probabilistic prediction errors, and differences in
+              learned feature representations.
+            </p>
+
+            <p class="notebook-filename">
+              <code>P05_CORRECTED_Mechanistic_Analysis.ipynb</code>
+            </p>
+
+            <div class="notebook-actions">
+              <a
+                class="notebook-button notebook-button-primary"
+                href="../notebooks/P05_CORRECTED_Mechanistic_Analysis.ipynb"
+                download
+              >
+                Download Notebook ↓
+              </a>
+
+              <a
+                class="notebook-button notebook-button-secondary"
+                href="https://github.com/salman-sayeed/AIUB-Thesis-BSCS-G27-Summer-26-27/blob/main/notebooks/P05_CORRECTED_Mechanistic_Analysis.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- NOTEBOOK 06 -->
+
+          <article class="notebook-card">
+            <div class="notebook-card-top">
+              <span class="notebook-phase"> Phase 06 </span>
+
+              <span class="notebook-category"> Domain Adaptation </span>
+            </div>
+
+            <h3 class="notebook-title">Class-Conditional MMD</h3>
+
+            <p class="notebook-description">
+              Investigates whether aligning learned representations between
+              skin-tone-related domains, while considering class labels, changes
+              the model's evaluated performance. The adaptation settings were
+              selected using validation data.
+            </p>
+
+            <p class="notebook-filename">
+              <code>P06_FROZEN_ClassConditional_MMD.ipynb</code>
+            </p>
+
+            <div class="notebook-actions">
+              <a
+                class="notebook-button notebook-button-primary"
+                href="../notebooks/P06_FROZEN_ClassConditional_MMD.ipynb"
+                download
+              >
+                Download Notebook ↓
+              </a>
+
+              <a
+                class="notebook-button notebook-button-secondary"
+                href="https://github.com/salman-sayeed/AIUB-Thesis-BSCS-G27-Summer-26-27/blob/main/notebooks/P06_FROZEN_ClassConditional_MMD.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- NOTEBOOK 07 -->
+
+          <article class="notebook-card">
+            <div class="notebook-card-top">
+              <span class="notebook-phase"> Phase 07 </span>
+
+              <span class="notebook-category"> Group Evaluation </span>
+            </div>
+
+            <h3 class="notebook-title">Broader Skin-Tone Group Analysis</h3>
+
+            <p class="notebook-description">
+              Examines classification results across grouped skin-tone domains
+              and the six Fitzpatrick categories to investigate variation in
+              model performance between groups.
+            </p>
+
+            <p class="notebook-filename">
+              <code>P07_FROZEN_Broader_Fairness.ipynb</code>
+            </p>
+
+            <div class="notebook-actions">
+              <a
+                class="notebook-button notebook-button-primary"
+                href="../notebooks/P07_FROZEN_Broader_Fairness.ipynb"
+                download
+              >
+                Download Notebook ↓
+              </a>
+
+              <a
+                class="notebook-button notebook-button-secondary"
+                href="https://github.com/salman-sayeed/AIUB-Thesis-BSCS-G27-Summer-26-27/blob/main/notebooks/P07_FROZEN_Broader_Fairness.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- NOTEBOOK 08 -->
+
+          <article class="notebook-card">
+            <div class="notebook-card-top">
+              <span class="notebook-phase"> Phase 08 </span>
+
+              <span class="notebook-category"> Explainable AI </span>
+            </div>
+
+            <h3 class="notebook-title">Grad-CAM++ Visual Explanations</h3>
+
+            <p class="notebook-description">
+              Explores Grad-CAM++ heatmaps to visualize image regions associated
+              with model predictions. The visual assessment is exploratory and
+              does not establish clinical reliability.
+            </p>
+
+            <p class="notebook-filename">
+              <code>P08_FROZEN_GradCAM_PlusPlus.ipynb</code>
+            </p>
+
+            <div class="notebook-actions">
+              <a
+                class="notebook-button notebook-button-primary"
+                href="../notebooks/P08_FROZEN_GradCAM_PlusPlus.ipynb"
+                download
+              >
+                Download Notebook ↓
+              </a>
+
+              <a
+                class="notebook-button notebook-button-secondary"
+                href="https://github.com/salman-sayeed/AIUB-Thesis-BSCS-G27-Summer-26-27/blob/main/notebooks/P08_FROZEN_GradCAM_PlusPlus.ipynb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========================================
+           DATASET INFORMATION
+      ========================================= -->
+
+      <section
+        class="notebooks-dataset-section"
+        aria-labelledby="dataset-info-heading"
+      >
+        <div class="notebooks-dataset-card">
+          <p class="notebooks-dataset-label">DATASET INFORMATION</p>
+
+          <h2 id="dataset-info-heading">Fitzpatrick17k Dataset</h2>
+
+          <p>
+            Our research uses the Fitzpatrick17k dataset, which includes
+            skin-condition images and associated annotations.
+          </p>
+
+          <p>
+            The original dataset repository is publicly available on GitHub. The
+            image data used during this study was obtained separately from the
+            dataset's maintainers under specific research-use conditions.
+          </p>
+
+          <p>
+            We do not redistribute the clinical image dataset. Researchers
+            seeking access should consult the original maintainers and follow
+            the applicable conditions.
+          </p>
+
+          <a
+            class="notebooks-dataset-link"
+            href="https://github.com/mattgroh/fitzpatrick17k"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit Original Dataset Repository ↗
+          </a>
+        </div>
+      </section>
+
+      <!-- ========================================
+           RESEARCH NOTE
+      ========================================= -->
+
+      <section
+        class="notebooks-research-note"
+        aria-label="Research interpretation note"
+      >
+        <p>
+          <strong>Research note:</strong>
+          In this study, the “Fair” domain refers to Fitzpatrick types I–III,
+          while the “Dark” domain refers to types IV–VI. These are experimental
+          grouping labels; the term “Fair” does not mean that a model has been
+          demonstrated to be fair. The research findings should not be
+          interpreted as clinical validation.
+        </p>
+      </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-primary">Department of Computer Science</p>
+
+        <p class="footer-secondary">
+          <a
+            href="https://www.aiub.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            American International University-Bangladesh
+          </a>
+        </p>
+
+        <p class="footer-secondary">Thesis BSCS G27 · Summer 2025–2026</p>
+      </div>
+    </footer>
+  </body>
+</html>
